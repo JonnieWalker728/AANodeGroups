@@ -1,6 +1,6 @@
 # AANodeGroups
 
-AANodeGroups 为 AzureArchive 剧情编辑器提供节点分组功能，便于整理节点、观察连线并节省画布空间。Mod 的安装名称为 **NodeGroups**，当前版本为 **1.0.2**。
+AANodeGroups 为 AzureArchive 剧情编辑器提供节点分组功能，便于整理节点、观察连线并节省画布空间。Mod 的安装名称为 **NodeGroups**，当前版本为 **1.0.3**。
 
 ## 功能介绍
 
@@ -21,19 +21,19 @@ AANodeGroups 为 AzureArchive 剧情编辑器提供节点分组功能，便于�
 需要已配置 BepInEx 6 IL2CPP 的 Windows 版 AzureArchive 环境。目前支持AzureArchive 1.0.0 和 1.0.1版本。
 
 1. 准备发行版 `NodeGroups.dll`、`manifest.json` 和 `icon.png`，关闭 AzureArchive。
-2. 将三个文件放入应用目录下的 `mods/NodeGroups/1.0.2/`：
+2. 将三个文件放入应用目录下的 `mods/NodeGroups/1.0.3/`：
 
    ```text
    AzureArchive/
    └─ mods/
       └─ NodeGroups/
-         └─ 1.0.2/
+         └─ 1.0.3/
             ├─ NodeGroups.dll
             ├─ icon.png
             └─ manifest.json
    ```
 
-3. 在应用的 Mod 管理界面启用 `NodeGroups/1.0.2`，然后重启应用。
+3. 在应用的 Mod 管理界面启用 `NodeGroups/1.0.3`，然后重启应用。
 
 同一 Profile 只启用一个 NodeGroups 版本。清单版本与安装目录应一致，更新版本时先关闭应用。需要禁用时，在 Mod 管理界面关闭 NodeGroups 并重启；原工程中的真实节点会继续保留。
 

@@ -124,7 +124,9 @@ internal sealed class GroupUi : IDisposable
     private UISprite Button(Transform parent, string text, float x, float y, int width, int height, Action click, int depth)
     {
         var box = Sprite(parent, text, x, y, width, height, style.Button, depth, true);
-        var label = Label(box.transform, "Label", 8, -8, width - 16, height - 16, text, style.UiFont, 32, depth + 1);
+        var label = Label(box.transform, "Label", 0, 0, width - 16, height - 16, text, style.UiFont, 32, depth + 1);
+        label.pivot = UIWidget.Pivot.Center;
+        label.transform.localPosition = new Vector3(width * .5f, -height * .5f, 0);
         label.alignment = NGUIText.Alignment.Center;
         UIEventListener.Get(box.gameObject).onClick = (Action<GameObject>)(_ => Guard(click));
         return box;

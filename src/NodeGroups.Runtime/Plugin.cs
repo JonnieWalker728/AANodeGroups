@@ -12,7 +12,7 @@ namespace AzureArchive.NodeGroups.Runtime;
 public sealed class Plugin : BasePlugin
 {
     public const string Id = "azurearchive.nodegroups";
-    public const string Version = "1.0.2";
+    public const string Version = "1.0.3";
     internal static ManualLogSource Logger = null!;
 
     /// <summary>注册原生历史派生类、安装补丁并创建会话宿主；测试构建须由测试脚本启动。</summary>

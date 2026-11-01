@@ -1,0 +1,8 @@
+{
+  "name": "NodeGroups",
+  "version_number": "1.0.2",
+  "website_url": "",
+  "description": "Editor node groups with collapse, drag membership and native undo integration",
+  "author": "JonnieWalker728",
+  "dependencies": []
+}

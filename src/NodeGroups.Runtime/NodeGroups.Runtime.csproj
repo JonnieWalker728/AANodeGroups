@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NodeGroups</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <!-- Only production source files are compiled by this project. -->
+  <Import Project="../../build/RuntimeShared.props" />
+  <ItemGroup>
+    <AssemblyMetadata Include="NodeGroups.BuildFlavor" Value="Release" />
+    <!-- The native mod manager reads icon.png beside the release DLL and manifest. -->
+    <None Include="../../icon.png" Link="icon.png"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

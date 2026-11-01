@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/NodeGroups.Core/NodeGroups.Core.csproj" />
+    <Project Path="src/NodeGroups.Runtime/NodeGroups.Runtime.csproj" />
+    <Project Path="src/NodeGroups.Storage/NodeGroups.Storage.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/NodeGroups.Core.Tests/NodeGroups.Core.Tests.csproj" />
+    <Project Path="tests/NodeGroups.Runtime.Tests/NodeGroups.Runtime.Tests.csproj" />
+    <Project Path="tests/NodeGroups.Storage.Tests/NodeGroups.Storage.Tests.csproj" />
+  </Folder>
+</Solution>

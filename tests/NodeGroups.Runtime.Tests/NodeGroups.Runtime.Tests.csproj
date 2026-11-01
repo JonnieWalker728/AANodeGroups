@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Same assembly identity lets the native loader run the exact product source
+         with internal test access. Its output is isolated beneath this project. -->
+    <AssemblyName>NodeGroups</AssemblyName>
+    <DefineConstants>$(DefineConstants);NODEGROUPS_RUNTIME_TESTS</DefineConstants>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <IsTestProject>false</IsTestProject>
+  </PropertyGroup>
+  <Import Project="../../build/RuntimeShared.props" />
+  <ItemGroup>
+    <Compile Include="../../src/NodeGroups.Runtime/**/*.cs"
+             Exclude="../../src/NodeGroups.Runtime/obj/**;../../src/NodeGroups.Runtime/bin/**"
+             Link="Product/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(GameDir)/BepInEx/interop/UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <AssemblyMetadata Include="NodeGroups.BuildFlavor" Value="RuntimeTests" />
+  </ItemGroup>
+</Project>

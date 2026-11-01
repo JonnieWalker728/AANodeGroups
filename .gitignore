@@ -1,0 +1,38 @@
+# Generated builds and local caches
+**/bin/
+**/obj/
+.dotnet-cli/
+.nuget/
+TestResults/
+artifacts/
+*.dll
+*.exe
+*.pdb
+*.zip
+*.nupkg
+
+# Private development documents and acceptance evidence
+docs/
+DESIGN.md
+BRAINSTORMING.md
+IMPLEMENTATION_PLAN.md
+*.trx
+*.log
+*.before
+*.bak
+
+# Local editor settings
+.vs/
+.idea/
+*.user
+*.suo
+.vscode/settings.json
+.vscode/launch.json
+
+# Local secrets and signing material
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
